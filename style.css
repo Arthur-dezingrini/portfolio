@@ -17,7 +17,11 @@ body {
     display: none !important;
 }
 
-h2, p, li, a {
+p {
+    color: #7e7e7e;
+}
+
+h2, li, a {
     color: #fff;
     text-decoration: none;
 }
@@ -30,6 +34,8 @@ span {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header {
@@ -46,11 +52,9 @@ header::after {
 }
 
 header .conteiner {
-    display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 1.7rem 0;
-    flex-wrap: wrap;
 }
 
 header .conteiner .menu {
@@ -75,12 +79,60 @@ header .conteiner button {
     border-radius: 2rem;
     border: none;
     cursor: pointer;
-    background: linear-gradient(90deg, rgb(73, 73, 255) .2%, #151579 100%);
+    background: linear-gradient(90deg, #4949ff .2%, #151579 100%);
     color: white;
     transition: 0.3s;
 }
 
 header .conteiner button:hover {
-    background: linear-gradient(90deg, rgb(52, 52, 177) .2%,rgb(21, 23, 74)) 100%;
+    background: linear-gradient(90deg, #3434b1 .2%, #15174a 100%);
     scale: 1.07;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+main .conteiner {
+    justify-content: space-around;
+    margin: 0 auto; 
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 350px;
+    transition: 0.3s;
+}
+
+.avatar:hover {
+    scale: 1.07;
+}
+.apresentation {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+} 
+
+.apresentation h2 {
+    font-size: 35px;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.sobre h2 {
+    font-size: 30px;
+}
+
+.sobre p {
+    width: 70%;
+    letter-spacing: 0.9px;
 }
