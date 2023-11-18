@@ -94,7 +94,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 85vh;
-}
+}   
 
 main .conteiner {
     justify-content: space-around;
@@ -111,13 +111,66 @@ main .conteiner {
     scale: 1.07;
 }
 .apresentation {
+    position: relative;
+    text-align: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-} 
+    width: 45%;
+}
 
 .apresentation h2 {
     font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.apresentation::before,
+.apresentation::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+}
+
+.apresentation::before,
+.apresentation::after {
+    width: 1px;
+    height: 100px;
+}
+
+.apresentation::before {
+    left: 0;
+    top: 50px;
+}
+
+.apresentation::after {
+    right: 0;
+    bottom: 50px;
+}
+
+.apresentation::before,
+.apresentation::after,
+.apresentation h2::before,
+.apresentation h2::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+}
+
+.apresentation h2::before,
+.apresentation h2::after {
+    width: 100px;
+    height: 1px;
+}
+
+.apresentation h2::before {
+    left: 0;
+    top: 50px;
+}
+
+.apresentation h2::after {
+    right: 0;
+    bottom: 50px;
 }
 
 .sobre {
@@ -133,6 +186,20 @@ main .conteiner {
 }
 
 .sobre p {
+    border-radius: 16px;
+    padding: 3rem;
+    background-color: #0000004f;
     width: 70%;
     letter-spacing: 0.9px;
+    font-size: 18px;
+}
+
+.sobre button {
+    padding: 0.9rem 2.1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(90deg, #4949ff .2%, #151579 100%);
+    color: white;
+    transition: 0.3s;
 }
