@@ -24,23 +24,17 @@ p {
 h2, li, a {
     color: #fff;
     text-decoration: none;
+    list-style: none;
 }
 
 span {
-    color: #151579
+    color: #3434b1
 }
 
-.conteiner {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+.container {
     display: flex;
-    flex-wrap: wrap;
-}
-
-header {
-    border: 0;
-    position: sticky;
+    justify-content: center;
+    width: 90%;
 }
 
 header::after {
@@ -51,30 +45,13 @@ header::after {
     background-image: linear-gradient(90deg, rgb(73, 73, 255) .2%, #151579 100%);
 }
 
-header .conteiner {
+header .container {
     align-items: center;
     justify-content: space-around;
     padding: 1.7rem 0;
 }
 
-header .conteiner .menu {
-    width: 33.3%;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
-header .conteiner .menu a li{
-    transition: 0.4s;
-}
-
-header .conteiner .menu a:hover li {
-    transition: 0.3s;
-    scale: 1.2;
-    color: #151579;
-}
-
-header .conteiner button {
+header .container button {
     padding: 0.9rem 2.1rem;
     border-radius: 2rem;
     border: none;
@@ -84,7 +61,7 @@ header .conteiner button {
     transition: 0.3s;
 }
 
-header .conteiner button:hover {
+header .container button:hover {
     background: linear-gradient(90deg, #3434b1 .2%, #15174a 100%);
     scale: 1.07;
 }
@@ -96,15 +73,14 @@ main {
     height: 85vh;
 }   
 
-main .conteiner {
-    justify-content: space-around;
-    margin: 0 auto; 
+main .container {
+    justify-content: space-evenly;
 }
 
 .avatar {
     border-radius: 50%;
     height: 350px;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .avatar:hover {
@@ -173,33 +149,64 @@ main .conteiner {
     bottom: 50px;
 }
 
-.sobre {
+.projetos {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.projetos h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.container-projetos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-projetos li {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    width: 32%;
+    margin: 5px;
+    padding: 30px;
+    border: 2px solid #3434b1;
+    gap: 15px;
+    text-align: start;
 }
 
-.sobre h2 {
-    font-size: 30px;
-}
-
-.sobre p {
-    border-radius: 16px;
-    padding: 3rem;
-    background-color: #0000004f;
-    width: 70%;
-    letter-spacing: 0.9px;
+.container-projetos li p {
+    display: flex;
     font-size: 18px;
+    transition: 0.4s;
 }
 
-.sobre button {
-    padding: 0.9rem 2.1rem;
-    border-radius: 2rem;
-    border: none;
-    cursor: pointer;
-    background: linear-gradient(90deg, #4949ff .2%, #151579 100%);
-    color: white;
-    transition: 0.3s;
+.container-projetos li p a {
+    transition: 0.4s;
+}
+
+.container-projetos li p a:hover {
+    color: #3434b1;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+footer::before {
+    content: ""; 
+    position: absolute; 
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-image: linear-gradient(90deg, rgb(73, 73, 255) .2%, #151579 100%);
+}
+
+.footer {
+    padding: 1.5rem; 
 }
