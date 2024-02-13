@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arthur Dezingrini</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cac01c0fdd.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <header>
@@ -12,7 +14,7 @@
             <h2>
                 <a href="">Arthur <span>Dezingrini</span> </a>
             </h2>
-            <button>
+            <button class="btn">
                 Contato
             </button>
         </div> 
@@ -36,6 +38,25 @@
         </div>
     </section>
 
+    <section class="contatos">
+        <h1>
+            Contato
+        </h1>
+        <div class="contatos-container">
+            <form id="myForm" method="POST" class="form">
+                <input type="text" placeholder="Nome" name="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea rows="10" name="message" placeholder="Digite sua mensagem" id="message" required></textarea>
+                <button type="submit" name="" class="btn"> Enviar </button>
+            </form>
+            <div class="social">
+                <a href="https://www.instagram.com/arthur_dezingrini/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/arthur-dezingrini-017909269/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Arthur-dezingrini" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer"> 
             <p>
@@ -45,5 +66,6 @@
     </footer>
 
 <script src="script.js"></script>
+<script src="email.js"></script>
 </body>
 </html>

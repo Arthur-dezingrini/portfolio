@@ -11,6 +11,9 @@ body {
     background-color: #16161c;
     font-family: 'Playfair Display SC', serif;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .hidden {
@@ -29,6 +32,27 @@ h2, li, a {
 
 span {
     color: #3434b1
+}
+
+
+h1  {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+input, textarea {
+    background-color: transparent;
+    padding: 8px;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #3434b1;
+    color: #fff;
+    transition: 0.4s;
+}
+
+input:focus, textarea:focus {
+    border-bottom: 1px solid #4949ff;;
 }
 
 .container {
@@ -51,7 +75,7 @@ header .container {
     padding: 1.7rem 0;
 }
 
-header .container button {
+.btn {
     padding: 0.9rem 2.1rem;
     border-radius: 2rem;
     border: none;
@@ -61,7 +85,7 @@ header .container button {
     transition: 0.3s;
 }
 
-header .container button:hover {
+.btn:hover {
     background: linear-gradient(90deg, #3434b1 .2%, #15174a 100%);
     scale: 1.07;
 }
@@ -155,12 +179,6 @@ main .container {
     text-align: center;
 }
 
-.projetos h1 {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 500;
-}
-
 .container-projetos {
     display: flex;
     flex-wrap: wrap;
@@ -188,6 +206,44 @@ main .container {
 }
 
 .container-projetos li p a:hover {
+    color: #3434b1;
+}
+
+.contatos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contatos-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+    gap: 10px;
+    width: 40%;
+}
+
+.social {
+    display: flex;
+    color: #fff;
+    gap: 20px;
+}
+
+.social i{
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.social i:hover {
     color: #3434b1;
 }
 
