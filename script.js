@@ -1,6 +1,6 @@
 const ul = document.getElementById("ul");
 const username = "Arthur-dezingrini";
-const token = "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";
+const token = "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";
 const apiUrl = `https://api.github.com/users/${username}/repos?type=public`;
 
 function getApiGitHub() {
